@@ -35,7 +35,7 @@ void consultar_habitaciones() {
         std::cout << "---------------------------------------------------" << std::endl;
         for (const auto& row : result) {
             std::cout << "ID: " << row["id"].as<int>()
-                      << ", Número: " << row["numero"].as<int>()
+                      << ", Numero: " << row["numero"].as<int>()
                       << ", Tipo: " << row["tipo"].as<std::string>()
                       << ", Precio: " << row["precio"].as<double>() << " USD" << std::endl;
         }
