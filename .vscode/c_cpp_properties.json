@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "C:\\msys64\\home\\natha\\HotelManagementC\\include",          // Headers de tu proyecto
+                "C:\\msys64\\home\\natha\\HotelManagementC\\src",             // Carpeta de código fuente
+                "C:/msys64/ucrt64/include",          // Headers generales de MSYS2
+                "C:/msys64/ucrt64/include/c++/14.2.0", // Headers estándar de C++
+                "${workspaceFolder}/**"              // Todas las subcarpetas del proyecto
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.22621.0",
+            "compilerPath": "C:/msys64/ucrt64/bin/g++.exe", // Cambiar de `cl.exe` a GCC
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64" // Cambiar de `windows-msvc-x64` a GCC
+        }
+    ],
+    "version": 4
+}

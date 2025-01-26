@@ -1,0 +1,30 @@
+Thu Jan 23 03:11:47 2025
+: Cliente registrado con éxito
+Thu Jan 23 13:17:59 2025
+: Cliente registrado con éxito
+Cliente: Nombre: Victor Ariel, Correo: VictorA@gmail.com, Teléfono: 8092416609
+----------------------------------------
+Thu Jan 23 14:27:32 2025
+: Cliente registrado con éxito
+Cliente: Nombre: Lisbeth, Correo: Lisbeth@gmail.com, Teléfono: 8093601738
+----------------------------------------
+Thu Jan 23 14:36:22 2025
+: Cliente registrado con éxito
+Cliente: Nombre: Juan, Correo: jm@gmail.com, Teléfono: 8052631470
+----------------------------------------
+Thu Jan 23 23:00:19 2025
+: Habitacion registrada con exito
+Habitacion: Numero: 46, Tipo: Doble, Precio: 89
+----------------------------------------
+Fri Jan 24 02:03:57 2025
+: Cliente registrado con éxito
+Cliente: Nombre: Edwin Espinal, Correo: edwinespinal@gmail.com, Teléfono: 8093605713
+----------------------------------------
+Fri Jan 24 18:58:38 2025
+: Cliente registrado con éxito
+Cliente: Nombre: Juan Carlos, Correo: jc@gmail.com, Teléfono: 8496527412
+----------------------------------------
+Fri Jan 24 20:45:24 2025
+: Cliente registrado con éxito
+Cliente: Nombre: Antoni, Correo: Antoni@gmail.com, Teléfono: 849561230
+----------------------------------------

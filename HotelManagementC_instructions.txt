@@ -1,0 +1,24 @@
+# Descripción de comandos para construir y ejecutar el proyecto HotelManagementC
+
+1. `cd ~/HotelManagementC`  
+   Cambia el directorio actual al directorio raíz del proyecto llamado `HotelManagementC`.
+
+2. `cmake -S . -B build`  
+   Ejecuta CMake para generar los archivos de construcción del proyecto:
+   - `-S .` indica que el directorio fuente es el directorio actual.
+   - `-B build` indica que los archivos de construcción se generarán en el subdirectorio `build`.
+
+3. `cmake --build build`  
+   Compila el proyecto utilizando los archivos generados en el subdirectorio `build`. 
+   Esto genera los binarios necesarios para ejecutar el programa.
+
+4. `./bin/HotelManagement`  
+   Ejecuta el binario principal del proyecto llamado `HotelManagement`, ubicado en el directorio `bin`.
+
+-----------------------------------------------------------------------------------------
+
+cd ~/HotelManagementC
+cmake --build build --target clean
+cmake -S . -B build
+cmake --build build
+./bin/HotelManagement

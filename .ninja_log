@@ -1,0 +1,8 @@
+# ninja log v6
+14	3816	7593935247494746	CMakeFiles/HotelManagementC.dir/src/client_manager.cpp.obj	7b4e479a5e3bbb27
+29	3794	7593935247640918	CMakeFiles/HotelManagementC.dir/src/report_manager.cpp.obj	b5bc48f48c13e6b0
+34	3494	7593935247699548	CMakeFiles/HotelManagementC.dir/src/reservation_manager.cpp.obj	8a19772880ab645
+43	3467	7593935247784043	CMakeFiles/HotelManagementC.dir/src/utils.cpp.obj	4ae2f7f8b3a91b20
+20	1863	7593935247548840	CMakeFiles/HotelManagementC.dir/src/main.cpp.obj	7516b42d352a155c
+39	3815	7593935247734521	CMakeFiles/HotelManagementC.dir/src/room_manager.cpp.obj	317378c416377626
+25	1858	7593935247605751	CMakeFiles/HotelManagementC.dir/src/mutex_manager.cpp.obj	f71a1b50042f83fb

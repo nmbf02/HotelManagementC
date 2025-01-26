@@ -1,0 +1,3 @@
+C:/msys64/home/natha/HotelManagementC/build/CMakeFiles/HotelManagementC.dir
+C:/msys64/home/natha/HotelManagementC/build/CMakeFiles/edit_cache.dir
+C:/msys64/home/natha/HotelManagementC/build/CMakeFiles/rebuild_cache.dir
