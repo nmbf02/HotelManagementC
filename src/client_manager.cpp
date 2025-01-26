@@ -21,7 +21,7 @@ void validar_datos(const std::string& nombre, const std::string& correo, const s
         std::cerr << "Error: Los datos del cliente no son válidos." << std::endl;
     } else {
         datos_validos = true;
-        std::cout << "Datos válidos: Nombre: " << nombre << ", Correo: " << correo << ", Teléfono: " << telefono << std::endl;
+        std::cout << "Datos validos: Nombre: " << nombre << ", Correo: " << correo << ", Telefono: " << telefono << std::endl;
     }
 }
 
@@ -63,7 +63,7 @@ void insertar_cliente_en_db(const std::string& nombre, const std::string& correo
         txn.exec(query);
         txn.commit();
         std::cout << "Cliente insertado en la base de datos: Nombre: " << nombre << ", Correo: " << correo
-                  << ", Teléfono: " << telefono << std::endl;
+                  << ", Telefono: " << telefono << std::endl;
     } catch (const std::exception& e) {
         std::cerr << "Error al insertar cliente en la base de datos: " << e.what() << std::endl;
     }
@@ -78,7 +78,7 @@ void registrar_logs(const std::string& evento, const std::string& nombre, const 
     if (archivo_logs.is_open()) {
         auto tiempo_actual = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
         archivo_logs << std::ctime(&tiempo_actual) << ": " << evento << std::endl;
-        archivo_logs << "Cliente: Nombre: " << nombre << ", Correo: " << correo << ", Teléfono: " << telefono << std::endl;
+        archivo_logs << "Cliente: Nombre: " << nombre << ", Correo: " << correo << ", Telefono: " << telefono << std::endl;
         archivo_logs << "----------------------------------------" << std::endl;
         std::cout << "Log registrado: " << evento << std::endl;
     } else {
@@ -107,17 +107,17 @@ void registrar_cliente(const std::string& nombre, const std::string& correo, con
         std::thread hilo_insercion(insertar_cliente_en_db, nombre, correo, telefono);
 
         // Llamar a registrar_logs en paralelo con los datos del cliente
-        std::thread hilo_logs(registrar_logs, "Cliente registrado con éxito", std::ref(nombre), std::ref(correo), std::ref(telefono));
+        std::thread hilo_logs(registrar_logs, "Cliente registrado con exito", std::ref(nombre), std::ref(correo), std::ref(telefono));
 
         // Esperar a que ambos hilos terminen
         hilo_insercion.join();
         hilo_logs.detach();  // Desprender el hilo de logs para que se ejecute en paralelo
 
-        std::cout << "Proceso de registro completado con éxito." << std::endl;
+        std::cout << "Proceso de registro completado con exito." << std::endl;
     } else if (!datos_validos) {
-        std::cerr << "El registro del cliente falló debido a datos inválidos." << std::endl;
+        std::cerr << "El registro del cliente falló debido a datos invalidos." << std::endl;
     } else if (cliente_existe) {
-        std::cerr << "El cliente ya existe en la base de datos. No se realizó el registro." << std::endl;
+        std::cerr << "El cliente ya existe en la base de datos. No se realizo el registro." << std::endl;
     }
 }
 
@@ -141,7 +141,7 @@ void consultar_clientes() {
             std::cout << "ID: " << row["id"].as<int>()
                       << ", Nombre: " << row["nombre"].as<std::string>()
                       << ", Correo: " << row["correo"].as<std::string>()
-                      << ", Teléfono: " << row["telefono"].as<std::string>() << std::endl;
+                      << ", Telefono: " << row["telefono"].as<std::string>() << std::endl;
         }
     } catch (const std::exception& e) {
         std::cerr << "Error al consultar clientes: " << e.what() << std::endl;

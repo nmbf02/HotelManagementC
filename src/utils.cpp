@@ -8,7 +8,7 @@ pqxx::connection connect_to_db() {
         std::string connection_str = "host=localhost port=5432 dbname=hotel_management_c user=postgres password=0211";
         pqxx::connection conn(connection_str);
         if (conn.is_open()) {
-            std::cout << "Conexión a la base de datos exitosa." << std::endl;
+            std::cout << "Conexion a la base de datos exitosa." << std::endl;
         } else {
             throw std::runtime_error("No se pudo conectar a la base de datos.");
         }

@@ -5,11 +5,11 @@
 #include <pqxx/pqxx> // Para acceder a la base de datos
 #include <hpdf.h>    // Librería libharu para generar PDF
 #include <chrono>
-#include <iomanip>   // Para std::put_time
+#include <iomanip>   // Para std::put_time - Para el formato de fecha y hora de archivo
 
 void error_handler(HPDF_STATUS error_no, HPDF_STATUS detail_no, void* user_data) {
     std::cerr << "Error al generar PDF: " << error_no << ", detalle: " << detail_no << std::endl;
-    throw std::runtime_error("Error en la generación del PDF.");
+    throw std::runtime_error("Error en la generacion del PDF.");
 }
 
 // Función para obtener la fecha y hora actual en formato "YYYY-MM-DD_HH-MM-SS"
@@ -125,7 +125,7 @@ void generar_reporte(const std::string& archivo_pdf) {
         // Cerrar el documento PDF
         HPDF_Free(pdf);
 
-        std::cout << "Reporte generado con éxito: " << ruta_completa << std::endl;
+        std::cout << "Reporte generado con exito: " << ruta_completa << std::endl;
     } catch (const std::exception& e) {
         std::cerr << "Error al generar el reporte: " << e.what() << std::endl;
     }

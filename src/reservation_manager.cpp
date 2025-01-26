@@ -37,11 +37,13 @@ void consultar_reservas() {
         pqxx::result result = txn.exec(query);
 
         // Mostrar las reservas en la consola
-        std::cout << "=== Lista de Reservas ===" << std::endl;
+        std::cout << "---------------------------------------------------" << std::endl;
+        std::cout << "                     Lista de reservas             " << std::endl;
+        std::cout << "---------------------------------------------------" << std::endl;
         for (const auto& row : result) {
             std::cout << "ID: " << row["id"].as<int>()
                       << ", Cliente: " << row["cliente"].as<std::string>()
-                      << ", Habitación: " << row["habitacion"].as<int>()
+                      << ", Habitacion: " << row["habitacion"].as<int>()
                       << ", Fecha Inicio: " << row["fecha_inicio"].as<std::string>()
                       << ", Fecha Fin: " << row["fecha_fin"].as<std::string>() << std::endl;
         }
@@ -66,15 +68,17 @@ void consultar_reservas_del_dia_actual() {
         pqxx::result result = txn.exec(query);
 
         // Mostrar las reservas del día actual
-        std::cout << "=== Reservas Activas del Día Actual ===" << std::endl;
+        std::cout << "---------------------------------------------------" << std::endl;
+        std::cout << "           Reservas Activas del Dia Actual         " << std::endl;
+        std::cout << "---------------------------------------------------" << std::endl;
         for (const auto& row : result) {
             std::cout << "Reserva ID: " << row["id"].as<int>()
                       << ", Cliente: " << row["cliente"].as<std::string>()
-                      << ", Habitación: " << row["habitacion"].as<int>()
+                      << ", Habitacion: " << row["habitacion"].as<int>()
                       << ", Fecha Inicio: " << row["fecha_inicio"].as<std::string>()
                       << ", Fecha Fin: " << row["fecha_fin"].as<std::string>() << std::endl;
         }
     } catch (const std::exception& e) {
-        std::cerr << "Error al consultar reservas del día actual: " << e.what() << std::endl;
+        std::cerr << "Error al consultar reservas del dia actual: " << e.what() << std::endl;
     }
 }
