@@ -1,15 +1,16 @@
 # ninja log v6
 25	1509	7596136181035535	CMakeFiles/HotelManagementC.dir/src/main.cpp.obj	7516b42d352a155c
-62	3871	7596136181408381	CMakeFiles/HotelManagementC.dir/src/utils.cpp.obj	4ae2f7f8b3a91b20
-34	4194	7596136181130104	CMakeFiles/HotelManagementC.dir/src/report_manager.cpp.obj	b5bc48f48c13e6b0
-17	4785	7596136180957400	CMakeFiles/HotelManagementC.dir/src/client_manager.cpp.obj	7b4e479a5e3bbb27
-43	4118	7596136181213226	CMakeFiles/HotelManagementC.dir/src/reservation_manager.cpp.obj	8a19772880ab645
-53	4055	7596136181311441	CMakeFiles/HotelManagementC.dir/src/room_manager.cpp.obj	317378c416377626
-4786	5173	7596136228643081	C:/msys64/home/natha/HotelManagementC/bin/HotelManagementC.exe	5689d38910296983
-6	29	7596136170546472	clean	c0505d4284e53968
 59	3770	7596149484493599	CMakeFiles/HotelManagementC.dir/src/utils.cpp.obj	4ae2f7f8b3a91b20
 27	3916	7596149484168658	CMakeFiles/HotelManagementC.dir/src/report_manager.cpp.obj	b5bc48f48c13e6b0
-49	3941	7596149484387723	CMakeFiles/HotelManagementC.dir/src/room_manager.cpp.obj	317378c416377626
-39	3948	7596149484284765	CMakeFiles/HotelManagementC.dir/src/reservation_manager.cpp.obj	8a19772880ab645
 18	4472	7596149484077143	CMakeFiles/HotelManagementC.dir/src/client_manager.cpp.obj	7b4e479a5e3bbb27
+39	3948	7596149484284765	CMakeFiles/HotelManagementC.dir/src/reservation_manager.cpp.obj	8a19772880ab645
+49	3941	7596149484387723	CMakeFiles/HotelManagementC.dir/src/room_manager.cpp.obj	317378c416377626
 4472	4922	7596149528613333	C:/msys64/home/natha/HotelManagementC/bin/HotelManagementC.exe	5689d38910296983
+5	37	7596151219817368	clean	c0505d4284e53968
+28	1735	7596151464254155	CMakeFiles/HotelManagementC.dir/src/main.cpp.obj	7516b42d352a155c
+65	3936	7596151464652204	CMakeFiles/HotelManagementC.dir/src/utils.cpp.obj	4ae2f7f8b3a91b20
+56	4191	7596151464538804	CMakeFiles/HotelManagementC.dir/src/room_manager.cpp.obj	317378c416377626
+47	4207	7596151464439511	CMakeFiles/HotelManagementC.dir/src/reservation_manager.cpp.obj	8a19772880ab645
+37	4278	7596151464352312	CMakeFiles/HotelManagementC.dir/src/report_manager.cpp.obj	b5bc48f48c13e6b0
+19	4900	7596151464169469	CMakeFiles/HotelManagementC.dir/src/client_manager.cpp.obj	7b4e479a5e3bbb27
+4901	5332	7596151512981642	C:/msys64/home/natha/HotelManagementC/bin/HotelManagementC.exe	5689d38910296983
