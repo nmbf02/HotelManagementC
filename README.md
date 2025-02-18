@@ -1,40 +1,36 @@
-# Información T1 - S1
+# 🏨 Sistema de Gestión de Hoteles - Consola
 
-## Ejercicios para Matricula 1-18-xxxx hasta xx-xx-xxxx
+## 🌐 Descripción
 
-1) Desarrollar una app en C++ con varios procesos en paralelos y explicar su código. (Los procesos pueden ser: Sistema de Facturación en el que puedan consultar datos de una BD y al mismo tiempo guardar la factura, actualizar el inventario, actualizar el balance del cliente y envio del reporte por correo electrónico (Este ejemplo ya no es valido, buscar una opción parecida)). Todos estos procesos se deben realizar en paralelos para usar la cpu.
+**HotelManagementC** es un sistema de gestión hotelera desarrollado en **C++**, con una base de datos en **PostgreSQL**. Permite gestionar clientes, habitaciones y reservas, además de generar reportes en PDF y utilizar procesos en paralelo para optimizar el uso de la CPU. Diseñado para mejorar la administración hotelera, automatizando tareas clave y optimizando la organización de los recursos del hotel.
 
-## Sistema de Gestión de Hoteles
+## 🔄 Procesos Implementados
 
-## Procesos a realizar:
+### 👨‍🏫 Registro y Consulta:
+- Registrar Clientes
+- Registrar Habitaciones
+- Registrar Reservas
+- Consultar Clientes
+- Consultar Habitaciones
+- Consultar Reservas
+- Consultar clientes con reservas en el día actual
+- Generar reportes en **PDF**
+- Implementación de **procesos en paralelo** para mejor uso de la CPU
 
-C++:
+## 🛠 Tecnologías Utilizadas
 
-Registrar Clientes
-Registrar Habitaciones
-Registrar Reservas
-Consultar Clientes
-Consultar Habitaciones
-Consultar Reservas
-Consulta de los clients que tendrán reservas el día actual
-Generar un reporte y guardarlo por pdf 
+- **Lenguaje:** C++
+- **Base de Datos:** PostgreSQL
+- **Editor de Código:** Visual Studio Code (VSC)
+- **Compilador:** MSYS2 UCRT64
+- **Host:** localhost
+- **Usuario:** postgres
+- **Contraseña:** 0211
+- **Puerto:** 5432
 
-Procesos en paralelo para usa la CPU
+## 📚 Script de Base de Datos
 
-------------------------------------------------------------
-
-BD: PostgreSQL
-Editor de código: VSC
-Estoy usando: MSYS2 UCRT64
-Host: localhost
-User name: postgres
-Contraseña: 0211
-port: 5432
-
-------------------------------------------------------------
-
-Script de BD: hotel_management_c
-
+```sql
 -- Crear la base de datos
 CREATE DATABASE hotel_management_c;
 
@@ -93,3 +89,15 @@ INSERT INTO Reservations (GuestID, RoomID, CheckInDate, CheckOutDate, Status) VA
 (3, 201, '2025-01-04', '2025-01-07', 'Cancelled'),
 (4, 301, '2025-01-03', '2025-01-06', 'Confirmed'),
 (5, 202, '2025-01-08', '2025-01-10', 'Pending');
+```
+
+## 💼 Autor
+
+Este sistema ha sido desarrollado por:
+
+- **Nathaly Berroa** - *Desarrolladora Principal* - [GitHub](https://github.com/nmbf02)
+
+---
+
+Si deseas contribuir o reportar errores, por favor abre un issue en el repositorio.
+🚀✨
