@@ -3,7 +3,8 @@ Pasos para compilar el proyecto HotelManagementC
 1. Navega al directorio del proyecto:
    cd ~/HotelManagementC
 
-2. Configura el proyecto con CMake:
+2. Limpia y configura el proyecto con CMake:
+   cmake --build build --target clean
    cmake -S . -B build
 
 3. Compila el proyecto:
